@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use SLATE in your research, please cite this software release. Replace it with the final paper citation once the paper is published."
+title: "SLATE: Secure Model-Lineage Auditing against Audit-Aware Selective Serving"
+type: software
+authors:
+  - family-names: Nie
+    given-names: Hewang
+repository-code: "https://github.com/niehewang/SLATE"
+url: "https://github.com/niehewang/SLATE"
+version: 1.0.0
+date-released: 2026-10-05
+license: MIT
+keywords:
+  - model lineage
+  - model provenance
+  - black-box auditing
+  - LLM security
+  - selective serving
+  - model fingerprinting
