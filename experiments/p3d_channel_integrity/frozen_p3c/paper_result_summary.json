@@ -1,0 +1,346 @@
+{
+  "stage": "P3C",
+  "development_or_confirmatory": "held-out confirmatory",
+  "retuning_after_P3B": false,
+  "engine": "LLM-DNA/RepTrace 1.0.1",
+  "family": "Qwen3-4B-Base",
+  "descendant_type": "NF4 runtime quantization",
+  "method": "Full SLATE",
+  "q": 64,
+  "lambda": 0.05,
+  "honest_csvr": 0.21875,
+  "A1_csvr": 0.09375,
+  "A2_csvr": 0.0,
+  "fsvr": {
+    "honest": 0.0,
+    "A1": 0.03125,
+    "A2": 0.125
+  },
+  "channel_risk": {
+    "honest": 0.0,
+    "A1": 0.0,
+    "A2": 0.84375
+  },
+  "insufficient": {
+    "honest": 0.0,
+    "A1": 0.0,
+    "A2": 0.84375
+  },
+  "L1_auroc": 0.5349420654296875,
+  "L4_auroc": 0.6511230197674044,
+  "L8_auroc": 0.7405215054808366,
+  "bdr_at_air_08": 0.6768625737382565,
+  "air_at_bdr_01": 0.33811475409836067,
+  "beta10_air": {
+    "A1": 0.09228515625,
+    "A2": 0.33740234375
+  },
+  "beta10_bdr": {
+    "A1": 0.096,
+    "A2": 0.11120821498798339
+  },
+  "beta10_csvr": {
+    "A1": 0.09375,
+    "A2": 0.0
+  },
+  "mean_J": 0.6931627225810275,
+  "Khat_q": 154.92786601459562,
+  "gamma_select": 0.2352352066597247,
+  "delta_sched": {
+    "1": {
+      "delta_random": 0.23734661089902043,
+      "delta_sched_L": 0.23734661089902043,
+      "improvement": 0.0
+    },
+    "4": {
+      "delta_random": 0.6317008015450811,
+      "delta_sched_L": 0.7817957612401524,
+      "improvement": -0.15009495969507125
+    },
+    "8": {
+      "delta_random": 0.6725694170270301,
+      "delta_sched_L": 0.8784652033222256,
+      "improvement": -0.20589578629519545
+    }
+  },
+  "epsilon_D_L": {
+    "1": {
+      "detector": "D4_L1",
+      "AIR": 0.08984375,
+      "BDR": 0.088,
+      "epsilon_D_L": 0.001843750000000005
+    },
+    "4": {
+      "detector": "D3_L4",
+      "AIR": 0.35399590163934425,
+      "BDR": 0.11120821498798339,
+      "epsilon_D_L": 0.24278768665136086
+    },
+    "8": {
+      "detector": "D3_L8",
+      "AIR": 0.39035087719298245,
+      "BDR": 0.1255539143279173,
+      "epsilon_D_L": 0.26479696286506516
+    }
+  },
+  "bootstrap_CI": {
+    "honest_CSVR": [
+      0.09375,
+      0.375
+    ],
+    "A1_beta10_CSVR": [
+      0.0,
+      0.18828124999999574
+    ],
+    "A2_beta10_CSVR": [
+      0.0,
+      0.0
+    ],
+    "A1_beta10_AIR": [
+      0.0888671875,
+      0.09619140625
+    ],
+    "A2_beta10_AIR": [
+      0.326171875,
+      0.3486328125
+    ],
+    "paired_honest_minus_A1_CSVR": [
+      0.03125,
+      0.25
+    ],
+    "paired_honest_minus_A2_CSVR": [
+      0.09375,
+      0.375
+    ],
+    "detector_ROC": {
+      "1": {
+        "AUROC_sym": [
+          0.5225126452636719,
+          0.5482456250000001
+        ],
+        "BDR_at_AIR_0.8": [
+          0.6935975,
+          0.77271
+        ],
+        "AIR_at_BDR_0.1": [
+          0.08642578125,
+          0.11376953125
+        ]
+      },
+      "4": {
+        "AUROC_sym": [
+          0.6362955553113034,
+          0.6656247089868444
+        ],
+        "BDR_at_AIR_0.8": [
+          0.6447454664627486,
+          0.7164081275944942
+        ],
+        "AIR_at_BDR_0.1": [
+          0.3119877049180328,
+          0.36424180327868855
+        ]
+      },
+      "8": {
+        "AUROC_sym": [
+          0.7220006328714141,
+          0.7575247722796653
+        ],
+        "BDR_at_AIR_0.8": [
+          0.4128323485967504,
+          0.4822932053175775
+        ],
+        "AIR_at_BDR_0.1": [
+          0.31085526315789475,
+          0.39144736842105265
+        ]
+      }
+    }
+  },
+  "threshold_transfer": {
+    "0.01": {
+      "D1": {
+        "threshold": 0.5062152841403164,
+        "heldout_BDR": 0.011333333333333334,
+        "heldout_AIR": 0.0,
+        "nominal_BDR": 0.01
+      },
+      "D2": {
+        "threshold": 0.8527958989143373,
+        "heldout_BDR": 0.010666666666666666,
+        "heldout_AIR": 0.0224609375,
+        "nominal_BDR": 0.01
+      },
+      "D4_L1": {
+        "threshold": 0.8240835070610047,
+        "heldout_BDR": 0.0083,
+        "heldout_AIR": 0.00048828125,
+        "nominal_BDR": 0.01
+      },
+      "D3_L4": {
+        "threshold": 0.8401052355766297,
+        "heldout_BDR": 0.007428446580729736,
+        "heldout_AIR": 0.13780737704918034,
+        "nominal_BDR": 0.01
+      },
+      "D4_L4": {
+        "threshold": 0.8823094964027406,
+        "heldout_BDR": 0.006554511688879178,
+        "heldout_AIR": 0.09221311475409837,
+        "nominal_BDR": 0.01
+      },
+      "D3_L8": {
+        "threshold": 0.9981484413146974,
+        "heldout_BDR": 0.01846381093057607,
+        "heldout_AIR": 0.06743421052631579,
+        "nominal_BDR": 0.01
+      },
+      "D4_L8": {
+        "threshold": 0.9988669157028199,
+        "heldout_BDR": 0.0206794682422452,
+        "heldout_AIR": 0.041666666666666664,
+        "nominal_BDR": 0.01
+      }
+    },
+    "0.05": {
+      "D1": {
+        "threshold": 0.3513862580734162,
+        "heldout_BDR": 0.04733333333333333,
+        "heldout_AIR": 0.01806640625,
+        "nominal_BDR": 0.05
+      },
+      "D2": {
+        "threshold": 0.7464179992675782,
+        "heldout_BDR": 0.04533333333333334,
+        "heldout_AIR": 0.06787109375,
+        "nominal_BDR": 0.05
+      },
+      "D4_L1": {
+        "threshold": 0.4780098497867585,
+        "heldout_BDR": 0.0429,
+        "heldout_AIR": 0.06298828125,
+        "nominal_BDR": 0.05
+      },
+      "D3_L4": {
+        "threshold": 0.025963062420487407,
+        "heldout_BDR": 0.05068822372733232,
+        "heldout_AIR": 0.26383196721311475,
+        "nominal_BDR": 0.05
+      },
+      "D4_L4": {
+        "threshold": 0.016985714435577396,
+        "heldout_BDR": 0.05680576797028621,
+        "heldout_AIR": 0.2223360655737705,
+        "nominal_BDR": 0.05
+      },
+      "D3_L8": {
+        "threshold": 0.053934082388877876,
+        "heldout_BDR": 0.07163958641063516,
+        "heldout_AIR": 0.2708333333333333,
+        "nominal_BDR": 0.05
+      },
+      "D4_L8": {
+        "threshold": 0.06422927230596544,
+        "heldout_BDR": 0.07533234859675036,
+        "heldout_AIR": 0.2719298245614035,
+        "nominal_BDR": 0.05
+      }
+    },
+    "0.1": {
+      "D1": {
+        "threshold": 0.28613896024288,
+        "heldout_BDR": 0.096,
+        "heldout_AIR": 0.09228515625,
+        "nominal_BDR": 0.1
+      },
+      "D2": {
+        "threshold": 0.6564728617668153,
+        "heldout_BDR": 0.09933333333333333,
+        "heldout_AIR": 0.1044921875,
+        "nominal_BDR": 0.1
+      },
+      "D4_L1": {
+        "threshold": 0.2849056720733643,
+        "heldout_BDR": 0.088,
+        "heldout_AIR": 0.08984375,
+        "nominal_BDR": 0.1
+      },
+      "D3_L4": {
+        "threshold": 0.0021407878957688813,
+        "heldout_BDR": 0.11120821498798339,
+        "heldout_AIR": 0.35399590163934425,
+        "nominal_BDR": 0.1
+      },
+      "D4_L4": {
+        "threshold": 0.0010433616116642954,
+        "heldout_BDR": 0.10683854052873061,
+        "heldout_AIR": 0.32479508196721313,
+        "nominal_BDR": 0.1
+      },
+      "D3_L8": {
+        "threshold": 0.003281764686107636,
+        "heldout_BDR": 0.1255539143279173,
+        "heldout_AIR": 0.39035087719298245,
+        "nominal_BDR": 0.1
+      },
+      "D4_L8": {
+        "threshold": 0.005220514256507159,
+        "heldout_BDR": 0.13367799113737075,
+        "heldout_AIR": 0.3678728070175439,
+        "nominal_BDR": 0.1
+      }
+    },
+    "0.2": {
+      "D1": {
+        "threshold": 0.22924522516210483,
+        "heldout_BDR": 0.19716666666666666,
+        "heldout_AIR": 0.1669921875,
+        "nominal_BDR": 0.2
+      },
+      "D2": {
+        "threshold": 0.5406480431556703,
+        "heldout_BDR": 0.20316666666666666,
+        "heldout_AIR": 0.19482421875,
+        "nominal_BDR": 0.2
+      },
+      "D4_L1": {
+        "threshold": 0.12327271699905397,
+        "heldout_BDR": 0.1918,
+        "heldout_AIR": 0.1708984375,
+        "nominal_BDR": 0.2
+      },
+      "D3_L4": {
+        "threshold": 0.00012505875201895836,
+        "heldout_BDR": 0.21498798339523706,
+        "heldout_AIR": 0.4426229508196721,
+        "nominal_BDR": 0.2
+      },
+      "D4_L4": {
+        "threshold": 5.10765275976155e-05,
+        "heldout_BDR": 0.20318986235525455,
+        "heldout_AIR": 0.4487704918032787,
+        "nominal_BDR": 0.2
+      },
+      "D3_L8": {
+        "threshold": 0.00012863455049227926,
+        "heldout_BDR": 0.28729689807976366,
+        "heldout_AIR": 0.5674342105263158,
+        "nominal_BDR": 0.2
+      },
+      "D4_L8": {
+        "threshold": 0.00028173736063763505,
+        "heldout_BDR": 0.2843426883308715,
+        "heldout_AIR": 0.549890350877193,
+        "nominal_BDR": 0.2
+      }
+    }
+  },
+  "heldout_overlap": {
+    "dev": 0,
+    "cal": 0
+  },
+  "claims_supported": [
+    "one-shot held-out Full-SLATE confirmatory with P3B settings frozen"
+  ],
+  "next_required": "P3D channel-integrity only after assessing this return; then P4 SRP development/held-out"
+}

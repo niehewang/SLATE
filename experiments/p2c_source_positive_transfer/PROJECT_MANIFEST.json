@@ -1,0 +1,7 @@
+{
+  "project": "SLATE",
+  "stage": "PublishedBaselines StageP2C",
+  "name": "LLMPrint Source-Positive Threat Transfer v1",
+  "scientific_change_from_P2B": "Separate source-positive native threat-transfer experiment; NF4 boundary is retained and not replaced. Frozen tau/detectors/bank/proxy unchanged.",
+  "heldout_policy": "WildChat held-out untouched"
+}

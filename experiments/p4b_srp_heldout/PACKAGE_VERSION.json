@@ -1,0 +1,11 @@
+{
+  "package": "SLATE_Server_PublishedBaselines_StageP4B_SRP_FullSLATE_HeldoutConfirmatory_v1_1_EngineeringRecovery",
+  "stage": "P4B",
+  "version": "1.1",
+  "purpose": "Engineering-only recovery of the frozen P4B one-shot held-out evaluation after D1_L1/D2_L1 display-name to score-key mismatch",
+  "scientific_changes": "none",
+  "retuning_allowed": false,
+  "new_model_generation": false,
+  "second_confirmatory_claim": false,
+  "requires_prior_failure": "STAGEP4B_FAILED with KeyError('D1_L1') after heldout_detector_scores"
+}

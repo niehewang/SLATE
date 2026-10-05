@@ -1,0 +1,353 @@
+{
+  "stage": "P4B_INPUT_FREEZE",
+  "engine": "Semantic Response Profile (SRP)",
+  "engine_definition": {
+    "response_encoder": "Qwen3-Embedding-8B response embeddings reused from P3B",
+    "prototype": "per-query source response embedding",
+    "session_aggregation": "10% trimmed mean cosine similarity",
+    "source_candidates": [
+      "Qwen3-4B-Base",
+      "Phi-3-mini-4k-instruct"
+    ]
+  },
+  "family": "Qwen3-4B-Base",
+  "descendant": "NF4 runtime quantization",
+  "decoy": "Phi-3-mini-4k-instruct",
+  "q": 64,
+  "lambda": 1.0,
+  "beta_grid": [
+    0.01,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "main_beta": 0.1,
+  "L_grid": [
+    1,
+    4,
+    8
+  ],
+  "main_L": 4,
+  "tau_qwen": 0.65393785599354,
+  "tau_phi": 0.65393785599354,
+  "risk_threshold_kappa": 1.0265482856882986,
+  "bank_gap_threshold": 0.002545795776897397,
+  "full_detectors": {
+    "stateless": "D1",
+    "stateful_L4": "D4_L4",
+    "thresholds": {
+      "0.01": {
+        "D1": {
+          "threshold": 0.4823916533442849,
+          "measured_BDR": 0.01
+        },
+        "D2": {
+          "threshold": 0.8521613478660585,
+          "measured_BDR": 0.010166666666666666
+        },
+        "D4_L1": {
+          "threshold": 0.7814890146255494,
+          "measured_BDR": 0.0101
+        },
+        "D3_L4": {
+          "threshold": 0.8952420949935914,
+          "measured_BDR": 0.010186757215619695
+        },
+        "D4_L4": {
+          "threshold": 0.9606962203979493,
+          "measured_BDR": 0.010186757215619695
+        },
+        "D3_L8": {
+          "threshold": 0.9959994554519654,
+          "measured_BDR": 0.010230179028132993
+        },
+        "D4_L8": {
+          "threshold": 0.9987049102783204,
+          "measured_BDR": 0.010230179028132993
+        }
+      },
+      "0.05": {
+        "D1": {
+          "threshold": 0.33405972025174824,
+          "measured_BDR": 0.05
+        },
+        "D2": {
+          "threshold": 0.72565495967865,
+          "measured_BDR": 0.050166666666666665
+        },
+        "D4_L1": {
+          "threshold": 0.45594641566276556,
+          "measured_BDR": 0.0501
+        },
+        "D3_L4": {
+          "threshold": 0.03498084470629693,
+          "measured_BDR": 0.0500848896434635
+        },
+        "D4_L4": {
+          "threshold": 0.10586313158273698,
+          "measured_BDR": 0.0500848896434635
+        },
+        "D3_L8": {
+          "threshold": 0.4494629800319672,
+          "measured_BDR": 0.05051150895140665
+        },
+        "D4_L8": {
+          "threshold": 0.4982870221138001,
+          "measured_BDR": 0.05051150895140665
+        }
+      },
+      "0.1": {
+        "D1": {
+          "threshold": 0.27769665376658503,
+          "measured_BDR": 0.1
+        },
+        "D2": {
+          "threshold": 0.643912434577942,
+          "measured_BDR": 0.10016666666666667
+        },
+        "D4_L1": {
+          "threshold": 0.2779767215251923,
+          "measured_BDR": 0.1001
+        },
+        "D3_L4": {
+          "threshold": 0.001801704289391637,
+          "measured_BDR": 0.100169779286927
+        },
+        "D4_L4": {
+          "threshold": 0.008591628633439543,
+          "measured_BDR": 0.100169779286927
+        },
+        "D3_L8": {
+          "threshold": 0.014968437142670156,
+          "measured_BDR": 0.100383631713555
+        },
+        "D4_L8": {
+          "threshold": 0.011329579167068006,
+          "measured_BDR": 0.100383631713555
+        }
+      },
+      "0.2": {
+        "D1": {
+          "threshold": 0.22404936905758172,
+          "measured_BDR": 0.2
+        },
+        "D2": {
+          "threshold": 0.5306261777877809,
+          "measured_BDR": 0.20016666666666666
+        },
+        "D4_L1": {
+          "threshold": 0.1319125145673752,
+          "measured_BDR": 0.2001
+        },
+        "D3_L4": {
+          "threshold": 0.00010455922893015669,
+          "measured_BDR": 0.20012733446519523
+        },
+        "D4_L4": {
+          "threshold": 0.00035219092387706047,
+          "measured_BDR": 0.20012733446519523
+        },
+        "D3_L8": {
+          "threshold": 0.0005574630922637881,
+          "measured_BDR": 0.20012787723785166
+        },
+        "D4_L8": {
+          "threshold": 0.00034274844801984733,
+          "measured_BDR": 0.20012787723785166
+        }
+      }
+    },
+    "strongest_by_L": {
+      "1": {
+        "detector": "D1_L1",
+        "AUROC": 0.519413818359375,
+        "AUROC_sym": 0.519413818359375,
+        "BDR_at_AIR_0.8": 0.8073333333333333,
+        "AIR_at_BDR_0.1": 0.10986328125
+      },
+      "4": {
+        "detector": "D4_L4",
+        "AUROC": 0.7075991560612598,
+        "AUROC_sym": 0.7075991560612598,
+        "BDR_at_AIR_0.8": 0.5248302207130731,
+        "AIR_at_BDR_0.1": 0.3084016393442623
+      },
+      "8": {
+        "detector": "D3_L8",
+        "AUROC": 0.739948947256248,
+        "AUROC_sym": 0.739948947256248,
+        "BDR_at_AIR_0.8": 0.4859335038363171,
+        "AIR_at_BDR_0.1": 0.3514254385964912
+      }
+    }
+  },
+  "unwrapped_detectors": {
+    "stateless": "D2",
+    "stateful_L4": "D3_L4",
+    "thresholds": {
+      "0.01": {
+        "D1": {
+          "threshold": 0.25300644859126714,
+          "measured_BDR": 0.01
+        },
+        "D2": {
+          "threshold": 0.8418208360671998,
+          "measured_BDR": 0.010166666666666666
+        },
+        "D4_L1": {
+          "threshold": 0.4157238900661469,
+          "measured_BDR": 0.0101
+        },
+        "D3_L4": {
+          "threshold": 0.3858692049980164,
+          "measured_BDR": 0.010186757215619695
+        },
+        "D4_L4": {
+          "threshold": 0.04141579195857049,
+          "measured_BDR": 0.010611205432937181
+        },
+        "D3_L8": {
+          "threshold": 0.0006865256582386793,
+          "measured_BDR": 0.010230179028132993
+        },
+        "D4_L8": {
+          "threshold": 0.9971218705177308,
+          "measured_BDR": 0.011508951406649617
+        }
+      },
+      "0.05": {
+        "D1": {
+          "threshold": 0.1317097195634347,
+          "measured_BDR": 0.05
+        },
+        "D2": {
+          "threshold": 0.639398753643036,
+          "measured_BDR": 0.050166666666666665
+        },
+        "D4_L1": {
+          "threshold": 0.029054481536149982,
+          "measured_BDR": 0.0501
+        },
+        "D3_L4": {
+          "threshold": 5.6200125982286415e-05,
+          "measured_BDR": 0.0500848896434635
+        },
+        "D4_L4": {
+          "threshold": 7.536246266681702e-05,
+          "measured_BDR": 0.0500848896434635
+        },
+        "D3_L8": {
+          "threshold": 0.0001235171366715804,
+          "measured_BDR": 0.05051150895140665
+        },
+        "D4_L8": {
+          "threshold": 0.00020314416906330737,
+          "measured_BDR": 0.05051150895140665
+        }
+      },
+      "0.1": {
+        "D1": {
+          "threshold": 0.10199415674413778,
+          "measured_BDR": 0.1
+        },
+        "D2": {
+          "threshold": 0.46904551982879644,
+          "measured_BDR": 0.10016666666666667
+        },
+        "D4_L1": {
+          "threshold": 0.005505406297743321,
+          "measured_BDR": 0.1001
+        },
+        "D3_L4": {
+          "threshold": 1.819640056055505e-05,
+          "measured_BDR": 0.100169779286927
+        },
+        "D4_L4": {
+          "threshold": 5.45384391443804e-05,
+          "measured_BDR": 0.100169779286927
+        },
+        "D3_L8": {
+          "threshold": 8.481353870593013e-05,
+          "measured_BDR": 0.100383631713555
+        },
+        "D4_L8": {
+          "threshold": 0.00016178905207198116,
+          "measured_BDR": 0.100383631713555
+        }
+      },
+      "0.2": {
+        "D1": {
+          "threshold": 0.07995852003710424,
+          "measured_BDR": 0.2
+        },
+        "D2": {
+          "threshold": 0.2826943695545197,
+          "measured_BDR": 0.20016666666666666
+        },
+        "D4_L1": {
+          "threshold": 0.0005929512553848327,
+          "measured_BDR": 0.2001
+        },
+        "D3_L4": {
+          "threshold": 1.024547964334488e-05,
+          "measured_BDR": 0.20012733446519523
+        },
+        "D4_L4": {
+          "threshold": 4.091423761565239e-05,
+          "measured_BDR": 0.20012733446519523
+        },
+        "D3_L8": {
+          "threshold": 7.11891188984737e-05,
+          "measured_BDR": 0.20012787723785166
+        },
+        "D4_L8": {
+          "threshold": 0.00013236797531135383,
+          "measured_BDR": 0.20012787723785166
+        }
+      }
+    },
+    "strongest_by_L": {
+      "1": {
+        "detector": "D2_L1",
+        "AUROC": 0.5359010416666667,
+        "AUROC_sym": 0.5359010416666667,
+        "BDR_at_AIR_0.8": 0.7916666666666666,
+        "AIR_at_BDR_0.1": 0.140625
+      },
+      "4": {
+        "detector": "D3_L4",
+        "AUROC": 0.6393894903838124,
+        "AUROC_sym": 0.6393894903838124,
+        "BDR_at_AIR_0.8": 0.5564516129032258,
+        "AIR_at_BDR_0.1": 0.09836065573770492
+      },
+      "8": {
+        "detector": "D3_L8",
+        "AUROC": 0.766423181114551,
+        "AUROC_sym": 0.766423181114551,
+        "BDR_at_AIR_0.8": 0.35741687979539644,
+        "AIR_at_BDR_0.1": 0.21052631578947367
+      }
+    }
+  },
+  "unwrapped_query_strategy": "deterministic top-q by source-only J_E",
+  "evidence_scaling": {
+    "q05": 0.09972035167634467,
+    "q95": 0.7616276166312318
+  },
+  "candidate_pool_hashes": {
+    "dev": "c094a48fb6c54e704a45083e341fd1ada395ab3aebcdd7aa3dde29c377d35edd",
+    "cal": "0fa66261ceb5bd644856d7fa67b894bc8c0d277be5397eddef6940883f2eaa15"
+  },
+  "scheduler": {
+    "semantic_clusters": 8,
+    "length_bins": 4,
+    "length_quantiles": [
+      9.0,
+      18.0,
+      51.0
+    ]
+  },
+  "heldout_access_P4A": false,
+  "rule": "P4B one-shot heldout must rebuild/audit frozen detectors and must not retune any field."
+}

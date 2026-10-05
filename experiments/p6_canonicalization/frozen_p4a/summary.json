@@ -1,0 +1,63 @@
+{
+  "workflow": "SLATE_PUBLISHED_BASELINES_STAGEP4A_SRP_FULLSLATE_DEVCAL_FREEZE_V1",
+  "status": "STAGEP4A_COMPLETE",
+  "heldout_touched": false,
+  "new_model_generation": false,
+  "reused_P3B_response_embeddings": true,
+  "chosen_lambda": 1.0,
+  "full_honest": {
+    "CSVR": 0.125,
+    "FSVR": 0.0,
+    "Channel_Risk": 0.03125,
+    "Insufficient": 0.03125,
+    "Rejected": 0.84375
+  },
+  "unwrapped_honest": {
+    "CSVR": 0.0,
+    "FSVR": 0.0,
+    "Channel_Risk": 0.0,
+    "Insufficient": 0.0,
+    "Rejected": 1.0
+  },
+  "development_gate_preview": {
+    "G2_cover": {
+      "1": {
+        "full_AUROC": 0.519413818359375,
+        "unwrapped_AUROC": 0.5359010416666667,
+        "improvement": 0.0164872233072918
+      },
+      "4": {
+        "full_AUROC": 0.7075991560612598,
+        "unwrapped_AUROC": 0.6393894903838124,
+        "improvement": -0.06820966567744735
+      },
+      "8": {
+        "full_AUROC": 0.739948947256248,
+        "unwrapped_AUROC": 0.766423181114551,
+        "improvement": 0.026474233858302942
+      }
+    },
+    "G3_security_cost_L4": {
+      "full_BDR_at_AIR_0.8": 0.5248302207130731,
+      "unwrapped_BDR_at_AIR_0.8": 0.5564516129032258,
+      "gain": -0.0316213921901527
+    },
+    "G4_honest_utility": {
+      "full_CSVR": 0.125,
+      "unwrapped_CSVR": 0.0,
+      "drop": -0.125
+    },
+    "G5_beta10": {
+      "A1_full": 0.125,
+      "A1_unwrapped": 0.0,
+      "A1_gain": 0.125,
+      "A1_retention": 1.0,
+      "A2_full": 0.0,
+      "A2_unwrapped": 0.0,
+      "A2_gain": 0.0,
+      "A2_retention": 0.0
+    },
+    "note": "development/calibration preview only; formal gate decisions wait for P4B heldout"
+  },
+  "next": "StageP4B SRP Full-SLATE Held-out Confirmatory; freeze p4b_freeze_manifest.json"
+}

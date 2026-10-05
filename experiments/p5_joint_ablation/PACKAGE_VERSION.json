@@ -1,0 +1,8 @@
+{
+  "package": "SLATE_Server_PublishedBaselines_StageP5_JointFrozenAblation_ClaimBoundary_v1_1_CacheTagRecovery",
+  "version": "1.1",
+  "scope": "engineering recovery only: map logical heldout embedding tags to persisted P3C held_* filenames",
+  "scientific_protocol_changed": false,
+  "retuning_allowed": false,
+  "new_model_generation": false
+}

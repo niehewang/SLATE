@@ -1,0 +1,1 @@
+Return must include: status.json, summary.json, input_reuse_audit.json, evidence_model.json, lineage_thresholds.json, detector_freeze.json, lambda_freeze.json, development_metrics.json, ablation_dev.json, theory_bridge_dev.json, p4b_freeze_manifest.json, paper_result_summary.json, run.log, launcher_exit_code.txt.

@@ -1,0 +1,16 @@
+{
+  "workflow": "SLATE_STAGEP5_JOINT_FROZEN_ABLATION_CLAIM_BOUNDARY_V1_1_CACHE_TAG_RECOVERY",
+  "diagnostic_only": true,
+  "main_q": 64,
+  "heldout_sessions": 32,
+  "main_beta": 0.1,
+  "L_grid": [
+    1,
+    4,
+    8
+  ],
+  "seed": 20261005,
+  "new_model_generation": false,
+  "retuning_allowed": false,
+  "engineering_recovery": "held_prefix_cache_tag_only"
+}

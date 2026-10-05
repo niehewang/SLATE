@@ -1,0 +1,1 @@
+Expected compact return files: status.json, p3c_freeze_audit.json, freeze_audit.json, detector_rebuild_audit.json, consistency_operating_point.json, channel_integrity_metrics.json, paper_result_summary.json, summary.json, launcher_exit_code.txt, run.log.

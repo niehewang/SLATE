@@ -1,0 +1,21 @@
+{
+  "count": 128,
+  "train_indices": [
+    0,
+    63
+  ],
+  "eval_indices": [
+    64,
+    127
+  ],
+  "train_sha256": "5d5345699ee79d54c7f84b51dd9f92a43c26545101e4cf92f3c9368fb6164e26",
+  "eval_sha256": "e572d1a6e6a915868aaa368da77373864aaf5ad5319c9b356881a9a06d05772d",
+  "server_pairs": "/home/jx-vmlab/SLATE_TDSC_SERVER_SHARED/runs/slate_stagep2a_llmprint_threat_surface_v1/llmprint_128/pairs_128.pt",
+  "server_adv": "/home/jx-vmlab/SLATE_TDSC_SERVER_SHARED/runs/slate_stagep2a_llmprint_threat_surface_v1/llmprint_128/adv_128",
+  "gcg_settings": {
+    "num_steps": 100,
+    "search_width": 64,
+    "topk": 64,
+    "disable_prefix_cache": true
+  }
+}

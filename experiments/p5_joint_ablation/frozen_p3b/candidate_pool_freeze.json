@@ -1,0 +1,13 @@
+{
+  "development_n": 512,
+  "development_target": 512,
+  "development_source_split": "WildChat development only",
+  "calibration_n": 128,
+  "calibration_role": "evaluation/threshold-freeze pool; not the primary candidate-pool target",
+  "development_sha256": "c094a48fb6c54e704a45083e341fd1ada395ab3aebcdd7aa3dde29c377d35edd",
+  "calibration_sha256": "0fa66261ceb5bd644856d7fa67b894bc8c0d277be5397eddef6940883f2eaa15",
+  "q": 64,
+  "heldout_access": false,
+  "filter": "4..256 whitespace tokens; 12..2400 chars; unique text; deterministic hash",
+  "protocol_note": "Primary development candidate pool target is 512 per P3B spec; calibration pool remains disjoint for freeze/evaluation."
+}

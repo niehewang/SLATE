@@ -1,0 +1,50 @@
+{
+  "workflow": "SLATE_PUBLISHED_BASELINES_STAGEP3D_LLMDNA_CHANNEL_INTEGRITY_V1",
+  "main_q": 64,
+  "candidate_dev": 512,
+  "candidate_cal": 128,
+  "candidate_heldout": 128,
+  "lambda_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    1.0
+  ],
+  "beta_grid": [
+    0.01,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "main_beta": 0.1,
+  "L_grid": [
+    1,
+    4,
+    8
+  ],
+  "main_L": 4,
+  "dev_sessions_per_lambda": 24,
+  "cal_sessions_per_lambda": 32,
+  "heldout_sessions": 32,
+  "lineage_cal_sessions": 64,
+  "response_max_new_tokens": 64,
+  "generation_batch_size": 4,
+  "generation_temperature": 0.7,
+  "generation_top_p": 0.9,
+  "semantic_clusters": 8,
+  "length_bins": 4,
+  "detector_query_cap": 10000,
+  "detector_window_cap": 10000,
+  "d3_hidden": 64,
+  "d4_hidden": 64,
+  "seq_epochs": 8,
+  "seq_batch_size": 128,
+  "bootstrap_reps": 2000,
+  "seed": 20261004,
+  "detector_rebuild_auc_tolerance": 0.03,
+  "detector_rebuild_bdr_tolerance": 0.03,
+  "heldout_access": true,
+  "stage": "P3D",
+  "generation_disabled": true
+}

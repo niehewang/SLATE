@@ -1,0 +1,6 @@
+- No causal-LM generation code is invoked by Stage P3D.
+- P3C response banks and embeddings are reused after hash and ID checks.
+- P3B main lineage/risk thresholds are unchanged.
+- The 5% FAR consistency threshold is evaluation-only, calibrated on development/calibration before heldout scoring.
+- G6 uses the pre-existing risk score; there is no post-P3C rescue detector.
+- A3 is conservatively counted only if both exact-cache and semantic-cache variants meet the AUROC gate.

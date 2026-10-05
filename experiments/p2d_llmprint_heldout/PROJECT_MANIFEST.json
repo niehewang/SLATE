@@ -1,0 +1,7 @@
+{
+  "project": "SLATE / IEEE TDSC",
+  "stage": "StageP2D LLMPrint Held-out Confirmatory v1",
+  "type": "paper-facing confirmatory experiment",
+  "heldout_access": "only after prompt bank and detector reconstruction are frozen",
+  "no_posthoc_retuning": true
+}

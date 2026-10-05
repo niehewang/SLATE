@@ -1,0 +1,97 @@
+{
+  "D1_L1": {
+    "AUROC": 1.0,
+    "AUROC_sym": 1.0,
+    "youden_abs": 1.0,
+    "BDR_at_AIR_0.8": 0.0,
+    "AIR_at_BDR_0.1": 1.0,
+    "n_audit": 64,
+    "n_benign": 12000
+  },
+  "D2_L1": {
+    "AUROC": 1.0,
+    "AUROC_sym": 1.0,
+    "youden_abs": 1.0,
+    "BDR_at_AIR_0.8": 0.0,
+    "AIR_at_BDR_0.1": 1.0,
+    "n_audit": 64,
+    "n_benign": 12000
+  },
+  "D4_L1": {
+    "AUROC": 1.0,
+    "AUROC_sym": 1.0,
+    "youden_abs": 1.0,
+    "BDR_at_AIR_0.8": 0.0,
+    "AIR_at_BDR_0.1": 1.0,
+    "n_audit": 7000,
+    "n_benign": 7000
+  },
+  "D3_L4": {
+    "AUROC": 1.0,
+    "AUROC_sym": 1.0,
+    "youden_abs": 1.0,
+    "BDR_at_AIR_0.8": 0.0,
+    "AIR_at_BDR_0.1": 1.0,
+    "n_audit": 7000,
+    "n_benign": 5210
+  },
+  "D4_L4": {
+    "AUROC": 1.0,
+    "AUROC_sym": 1.0,
+    "youden_abs": 1.0,
+    "BDR_at_AIR_0.8": 0.0,
+    "AIR_at_BDR_0.1": 1.0,
+    "n_audit": 7000,
+    "n_benign": 5210
+  },
+  "D3_L8": {
+    "AUROC": 1.0,
+    "AUROC_sym": 1.0,
+    "youden_abs": 1.0,
+    "BDR_at_AIR_0.8": 0.0,
+    "AIR_at_BDR_0.1": 1.0,
+    "n_audit": 6840,
+    "n_benign": 1738
+  },
+  "D4_L8": {
+    "AUROC": 1.0,
+    "AUROC_sym": 1.0,
+    "youden_abs": 1.0,
+    "BDR_at_AIR_0.8": 0.0,
+    "AIR_at_BDR_0.1": 1.0,
+    "n_audit": 6840,
+    "n_benign": 1738
+  },
+  "strongest_by_L": {
+    "1": {
+      "detector": "D1_L1",
+      "AUROC": 1.0,
+      "AUROC_sym": 1.0,
+      "youden_abs": 1.0,
+      "BDR_at_AIR_0.8": 0.0,
+      "AIR_at_BDR_0.1": 1.0,
+      "n_audit": 64,
+      "n_benign": 12000
+    },
+    "4": {
+      "detector": "D3_L4",
+      "AUROC": 1.0,
+      "AUROC_sym": 1.0,
+      "youden_abs": 1.0,
+      "BDR_at_AIR_0.8": 0.0,
+      "AIR_at_BDR_0.1": 1.0,
+      "n_audit": 7000,
+      "n_benign": 5210
+    },
+    "8": {
+      "detector": "D3_L8",
+      "AUROC": 1.0,
+      "AUROC_sym": 1.0,
+      "youden_abs": 1.0,
+      "BDR_at_AIR_0.8": 0.0,
+      "AIR_at_BDR_0.1": 1.0,
+      "n_audit": 6840,
+      "n_benign": 1738
+    }
+  }
+}

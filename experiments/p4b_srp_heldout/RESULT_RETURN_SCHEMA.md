@@ -1,0 +1,14 @@
+Expected compact return artifacts:
+- status.json
+- freeze_audit.json
+- detector_rebuild_audit.json
+- heldout_pool.json
+- heldout_embedding_reuse_audit.json
+- threshold_transfer.json
+- heldout_metrics.json
+- gate_decisions.json
+- theory_bridge_heldout.json
+- paper_result_summary.json
+- summary.json
+- run.log
+- launcher_exit_code.txt

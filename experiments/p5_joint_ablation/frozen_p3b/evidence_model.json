@@ -1,0 +1,18 @@
+{
+  "definition": "cosdist(source,Phi)-cosdist(source,NF4), first64 frozen LLM-DNA response-embedding coordinates; clipped dev q05/q95 to [0,1]",
+  "dev_q05": -0.20036039994309146,
+  "dev_q95": 0.2970332207950235,
+  "dev_mean": 0.48207959440580833,
+  "cal_mean": 0.4723384707165119,
+  "dev_quantiles": {
+    "0": 0.0,
+    "0.1": 0.11150369766433013,
+    "0.25": 0.3178182231128235,
+    "0.5": 0.46281772597816895,
+    "0.75": 0.644319845046143,
+    "0.9": 0.8917282377084705,
+    "1": 1.0
+  },
+  "candidate_pool_dev": 512,
+  "candidate_pool_cal": 128
+}

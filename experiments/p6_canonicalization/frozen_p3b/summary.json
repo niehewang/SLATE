@@ -1,0 +1,61 @@
+{
+  "workflow": "SLATE_PUBLISHED_BASELINES_STAGEP3B_LLMDNA_FULLSLATE_DEVCAL_FREEZE_V1_2_1",
+  "runner_version": "v1.2.1_asset_path_resume",
+  "status": "STAGEP3B_COMPLETE",
+  "heldout_touched": false,
+  "p3a_v1_3_finalization_verified": true,
+  "chosen_lambda": 0.05,
+  "honest": {
+    "CSVR": 0.71875,
+    "FSVR": 0.0,
+    "Channel_Risk": 0.0,
+    "Insufficient": 0.0,
+    "Rejected": 0.28125
+  },
+  "beta10": {
+    "A1": {
+      "CSVR": 0.46875,
+      "FSVR": 0.0,
+      "Channel_Risk": 0.0,
+      "Insufficient": 0.0,
+      "Rejected": 0.53125,
+      "AIR": 0.1162109375,
+      "BDR": 0.1,
+      "AIR_minus_BDR": 0.016210937499999994
+    },
+    "A2": {
+      "CSVR": 0.0625,
+      "FSVR": 0.125,
+      "Channel_Risk": 0.65625,
+      "Insufficient": 0.65625,
+      "Rejected": 0.15625,
+      "AIR": 0.34912109375,
+      "BDR": 0.100169779286927,
+      "AIR_minus_BDR": 0.248951314463073
+    }
+  },
+  "strongest_by_L": {
+    "1": {
+      "detector": "D4_L1",
+      "AUROC": 0.5262660888671875,
+      "AUROC_sym": 0.5262660888671875,
+      "BDR_at_AIR_0.8": 0.8369,
+      "AIR_at_BDR_0.1": 0.146484375
+    },
+    "4": {
+      "detector": "D3_L4",
+      "AUROC": 0.7037049197723289,
+      "AUROC_sym": 0.7037049197723289,
+      "BDR_at_AIR_0.8": 0.5793718166383701,
+      "AIR_at_BDR_0.1": 0.3662909836065574
+    },
+    "8": {
+      "detector": "D3_L8",
+      "AUROC": 0.7748682317606677,
+      "AUROC_sym": 0.7748682317606677,
+      "BDR_at_AIR_0.8": 0.4143222506393862,
+      "AIR_at_BDR_0.1": 0.38596491228070173
+    }
+  },
+  "next": "StageP3C LLMDNA Full-SLATE Held-out Confirmatory. Freeze all settings in p3c_freeze_manifest.json."
+}

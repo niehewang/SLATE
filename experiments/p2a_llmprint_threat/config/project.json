@@ -1,0 +1,33 @@
+{
+  "workflow": "SLATE_PUBLISHED_BASELINES_STAGEP2A_LLMPRINT_THREAT_SURFACE_V1_3_SUFFIX_DECODE_HOTFIX",
+  "q": 64,
+  "pair_count_total": 128,
+  "train_pairs": 64,
+  "eval_pairs": 64,
+  "history_lengths": [
+    1,
+    4,
+    8
+  ],
+  "bdr_budgets": [
+    0.01,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "d3_hidden": 64,
+  "d4_hidden": 96,
+  "d3_epochs": 8,
+  "d4_epochs": 10,
+  "batch_size": 128,
+  "positive_train_sessions": 120,
+  "positive_eval_sessions": 120,
+  "benign_train_query_cap": 12000,
+  "benign_eval_query_cap": 12000,
+  "benign_window_cap": 7000,
+  "family_b_repo": "microsoft/Phi-3-mini-4k-instruct",
+  "family_b_target": "/data/jx-vmlab/SLATE_TDSC_SERVER_SHARED/public_models/Phi-3-mini-4k-instruct",
+  "family_b_min_free_gb": 20,
+  "hf_mirror_endpoint": "https://hf-mirror.com",
+  "reuse_run_root": "~/SLATE_TDSC_SERVER_SHARED/runs/slate_stagep2a_llmprint_threat_surface_v1"
+}

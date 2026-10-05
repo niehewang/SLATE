@@ -1,0 +1,490 @@
+{
+  "chosen_lambda": 1.0,
+  "full_slate": {
+    "honest": {
+      "CSVR": 0.125,
+      "FSVR": 0.0,
+      "Channel_Risk": 0.03125,
+      "Insufficient": 0.03125,
+      "Rejected": 0.84375
+    },
+    "attacks": {
+      "0.01": {
+        "A1": {
+          "CSVR": 0.125,
+          "FSVR": 0.0,
+          "Channel_Risk": 0.125,
+          "Insufficient": 0.125,
+          "Rejected": 0.75,
+          "AIR": 0.03271484375,
+          "BDR": 0.01,
+          "AIR_minus_BDR": 0.022714843749999998
+        },
+        "A2": {
+          "CSVR": 0.125,
+          "FSVR": 0.09375,
+          "Channel_Risk": 0.375,
+          "Insufficient": 0.375,
+          "Rejected": 0.40625,
+          "AIR": 0.09228515625,
+          "BDR": 0.010186757215619695,
+          "AIR_minus_BDR": 0.0820983990343803
+        }
+      },
+      "0.05": {
+        "A1": {
+          "CSVR": 0.15625,
+          "FSVR": 0.09375,
+          "Channel_Risk": 0.25,
+          "Insufficient": 0.25,
+          "Rejected": 0.5,
+          "AIR": 0.06591796875,
+          "BDR": 0.05,
+          "AIR_minus_BDR": 0.015917968749999997
+        },
+        "A2": {
+          "CSVR": 0.0,
+          "FSVR": 0.25,
+          "Channel_Risk": 0.6875,
+          "Insufficient": 0.6875,
+          "Rejected": 0.0625,
+          "AIR": 0.197265625,
+          "BDR": 0.0500848896434635,
+          "AIR_minus_BDR": 0.1471807353565365
+        }
+      },
+      "0.1": {
+        "A1": {
+          "CSVR": 0.125,
+          "FSVR": 0.1875,
+          "Channel_Risk": 0.375,
+          "Insufficient": 0.375,
+          "Rejected": 0.3125,
+          "AIR": 0.10986328125,
+          "BDR": 0.1,
+          "AIR_minus_BDR": 0.009863281249999994
+        },
+        "A2": {
+          "CSVR": 0.0,
+          "FSVR": 0.3125,
+          "Channel_Risk": 0.6875,
+          "Insufficient": 0.6875,
+          "Rejected": 0.0,
+          "AIR": 0.2939453125,
+          "BDR": 0.100169779286927,
+          "AIR_minus_BDR": 0.193775533213073
+        }
+      },
+      "0.2": {
+        "A1": {
+          "CSVR": 0.0,
+          "FSVR": 0.1875,
+          "Channel_Risk": 0.8125,
+          "Insufficient": 0.8125,
+          "Rejected": 0.0,
+          "AIR": 0.22119140625,
+          "BDR": 0.2,
+          "AIR_minus_BDR": 0.02119140624999999
+        },
+        "A2": {
+          "CSVR": 0.0,
+          "FSVR": 0.78125,
+          "Channel_Risk": 0.21875,
+          "Insufficient": 0.21875,
+          "Rejected": 0.0,
+          "AIR": 0.439453125,
+          "BDR": 0.20012733446519523,
+          "AIR_minus_BDR": 0.23932579053480477
+        }
+      }
+    },
+    "strongest_by_L": {
+      "1": {
+        "detector": "D1_L1",
+        "AUROC": 0.519413818359375,
+        "AUROC_sym": 0.519413818359375,
+        "BDR_at_AIR_0.8": 0.8073333333333333,
+        "AIR_at_BDR_0.1": 0.10986328125
+      },
+      "4": {
+        "detector": "D4_L4",
+        "AUROC": 0.7075991560612598,
+        "AUROC_sym": 0.7075991560612598,
+        "BDR_at_AIR_0.8": 0.5248302207130731,
+        "AIR_at_BDR_0.1": 0.3084016393442623
+      },
+      "8": {
+        "detector": "D3_L8",
+        "AUROC": 0.739948947256248,
+        "AUROC_sym": 0.739948947256248,
+        "BDR_at_AIR_0.8": 0.4859335038363171,
+        "AIR_at_BDR_0.1": 0.3514254385964912
+      }
+    }
+  },
+  "unwrapped_srp": {
+    "honest": {
+      "CSVR": 0.0,
+      "FSVR": 0.0,
+      "Channel_Risk": 0.0,
+      "Insufficient": 0.0,
+      "Rejected": 1.0
+    },
+    "attacks": {
+      "0.01": {
+        "A1": {
+          "CSVR": 0.0,
+          "FSVR": 0.0,
+          "Channel_Risk": 0.0,
+          "Insufficient": 0.0,
+          "Rejected": 1.0,
+          "AIR": 0.015625,
+          "BDR": 0.010166666666666666,
+          "AIR_minus_BDR": 0.005458333333333334
+        },
+        "A2": {
+          "CSVR": 0.0,
+          "FSVR": 0.0,
+          "Channel_Risk": 0.0,
+          "Insufficient": 0.0,
+          "Rejected": 1.0,
+          "AIR": 0.0,
+          "BDR": 0.010186757215619695,
+          "AIR_minus_BDR": -0.010186757215619695
+        }
+      },
+      "0.05": {
+        "A1": {
+          "CSVR": 0.0,
+          "FSVR": 0.0,
+          "Channel_Risk": 0.0,
+          "Insufficient": 0.0,
+          "Rejected": 1.0,
+          "AIR": 0.078125,
+          "BDR": 0.050166666666666665,
+          "AIR_minus_BDR": 0.027958333333333335
+        },
+        "A2": {
+          "CSVR": 0.0,
+          "FSVR": 0.0,
+          "Channel_Risk": 0.0,
+          "Insufficient": 0.0,
+          "Rejected": 1.0,
+          "AIR": 0.046875,
+          "BDR": 0.0500848896434635,
+          "AIR_minus_BDR": -0.0032098896434634983
+        }
+      },
+      "0.1": {
+        "A1": {
+          "CSVR": 0.0,
+          "FSVR": 0.0,
+          "Channel_Risk": 0.0,
+          "Insufficient": 0.0,
+          "Rejected": 1.0,
+          "AIR": 0.140625,
+          "BDR": 0.10016666666666667,
+          "AIR_minus_BDR": 0.04045833333333333
+        },
+        "A2": {
+          "CSVR": 0.0,
+          "FSVR": 0.0,
+          "Channel_Risk": 0.0,
+          "Insufficient": 0.0,
+          "Rejected": 1.0,
+          "AIR": 0.09375,
+          "BDR": 0.100169779286927,
+          "AIR_minus_BDR": -0.0064197792869269965
+        }
+      },
+      "0.2": {
+        "A1": {
+          "CSVR": 0.0,
+          "FSVR": 0.0,
+          "Channel_Risk": 0.0,
+          "Insufficient": 0.0,
+          "Rejected": 1.0,
+          "AIR": 0.25,
+          "BDR": 0.20016666666666666,
+          "AIR_minus_BDR": 0.04983333333333334
+        },
+        "A2": {
+          "CSVR": 0.0,
+          "FSVR": 1.0,
+          "Channel_Risk": 0.0,
+          "Insufficient": 0.0,
+          "Rejected": 0.0,
+          "AIR": 0.25,
+          "BDR": 0.20012733446519523,
+          "AIR_minus_BDR": 0.049872665534804766
+        }
+      }
+    },
+    "strongest_by_L": {
+      "1": {
+        "detector": "D2_L1",
+        "AUROC": 0.5359010416666667,
+        "AUROC_sym": 0.5359010416666667,
+        "BDR_at_AIR_0.8": 0.7916666666666666,
+        "AIR_at_BDR_0.1": 0.140625
+      },
+      "4": {
+        "detector": "D3_L4",
+        "AUROC": 0.6393894903838124,
+        "AUROC_sym": 0.6393894903838124,
+        "BDR_at_AIR_0.8": 0.5564516129032258,
+        "AIR_at_BDR_0.1": 0.09836065573770492
+      },
+      "8": {
+        "detector": "D3_L8",
+        "AUROC": 0.766423181114551,
+        "AUROC_sym": 0.766423181114551,
+        "BDR_at_AIR_0.8": 0.35741687979539644,
+        "AIR_at_BDR_0.1": 0.21052631578947367
+      }
+    }
+  },
+  "bootstrap_CI": {
+    "full_honest_CSVR": [
+      0.03125,
+      0.25
+    ],
+    "unwrapped_honest_CSVR": [
+      0.0,
+      0.0
+    ],
+    "full_A1_beta10_CSVR": [
+      0.03125,
+      0.25
+    ],
+    "full_A2_beta10_CSVR": [
+      0.0,
+      0.0
+    ],
+    "unwrapped_A1_beta10_CSVR": [
+      0.0,
+      0.0
+    ],
+    "unwrapped_A2_beta10_CSVR": [
+      0.0,
+      0.0
+    ]
+  },
+  "gate_preview": {
+    "G2_cover": {
+      "1": {
+        "full_AUROC": 0.519413818359375,
+        "unwrapped_AUROC": 0.5359010416666667,
+        "improvement": 0.0164872233072918
+      },
+      "4": {
+        "full_AUROC": 0.7075991560612598,
+        "unwrapped_AUROC": 0.6393894903838124,
+        "improvement": -0.06820966567744735
+      },
+      "8": {
+        "full_AUROC": 0.739948947256248,
+        "unwrapped_AUROC": 0.766423181114551,
+        "improvement": 0.026474233858302942
+      }
+    },
+    "G3_security_cost_L4": {
+      "full_BDR_at_AIR_0.8": 0.5248302207130731,
+      "unwrapped_BDR_at_AIR_0.8": 0.5564516129032258,
+      "gain": -0.0316213921901527
+    },
+    "G4_honest_utility": {
+      "full_CSVR": 0.125,
+      "unwrapped_CSVR": 0.0,
+      "drop": -0.125
+    },
+    "G5_beta10": {
+      "A1_full": 0.125,
+      "A1_unwrapped": 0.0,
+      "A1_gain": 0.125,
+      "A1_retention": 1.0,
+      "A2_full": 0.0,
+      "A2_unwrapped": 0.0,
+      "A2_gain": 0.0,
+      "A2_retention": 0.0
+    },
+    "note": "development/calibration preview only; formal gate decisions wait for P4B heldout"
+  },
+  "per_lambda": {
+    "0.05": {
+      "honest": {
+        "CSVR": 0.0,
+        "FSVR": 0.0,
+        "Channel_Risk": 0.0,
+        "Insufficient": 0.0,
+        "Rejected": 1.0
+      },
+      "strongest_by_L": {
+        "1": {
+          "detector": "D2_L1",
+          "AUROC": 0.5681353352864582,
+          "AUROC_sym": 0.5681353352864582,
+          "BDR_at_AIR_0.8": 0.7238333333333333,
+          "AIR_at_BDR_0.1": 0.10791015625
+        },
+        "4": {
+          "detector": "D4_L4",
+          "AUROC": 0.7870909467282696,
+          "AUROC_sym": 0.7870909467282696,
+          "BDR_at_AIR_0.8": 0.3957979626485569,
+          "AIR_at_BDR_0.1": 0.4098360655737705
+        },
+        "8": {
+          "detector": "D4_L8",
+          "AUROC": 0.8594787600394851,
+          "AUROC_sym": 0.8594787600394851,
+          "BDR_at_AIR_0.8": 0.2531969309462916,
+          "AIR_at_BDR_0.1": 0.5071271929824561
+        }
+      },
+      "mean_J": 0.6628368567800849,
+      "Khat_q": 139.70942173704344,
+      "Gamma_select": 0.22824151168345547
+    },
+    "0.1": {
+      "honest": {
+        "CSVR": 0.0,
+        "FSVR": 0.0,
+        "Channel_Risk": 0.0,
+        "Insufficient": 0.0,
+        "Rejected": 1.0
+      },
+      "strongest_by_L": {
+        "1": {
+          "detector": "D2_L1",
+          "AUROC": 0.5581241861979166,
+          "AUROC_sym": 0.5581241861979166,
+          "BDR_at_AIR_0.8": 0.7238333333333333,
+          "AIR_at_BDR_0.1": 0.10107421875
+        },
+        "4": {
+          "detector": "D4_L4",
+          "AUROC": 0.7696439396970414,
+          "AUROC_sym": 0.7696439396970414,
+          "BDR_at_AIR_0.8": 0.41935483870967744,
+          "AIR_at_BDR_0.1": 0.3831967213114754
+        },
+        "8": {
+          "detector": "D4_L8",
+          "AUROC": 0.8464852688787186,
+          "AUROC_sym": 0.8464852688787186,
+          "BDR_at_AIR_0.8": 0.2666240409207161,
+          "AIR_at_BDR_0.1": 0.4857456140350877
+        }
+      },
+      "mean_J": 0.6488477933688048,
+      "Khat_q": 99.00546088267303,
+      "Gamma_select": 0.21425244827217543
+    },
+    "0.2": {
+      "honest": {
+        "CSVR": 0.0,
+        "FSVR": 0.0,
+        "Channel_Risk": 0.0,
+        "Insufficient": 0.0,
+        "Rejected": 1.0
+      },
+      "strongest_by_L": {
+        "1": {
+          "detector": "D1_L1",
+          "AUROC": 0.5421918131510417,
+          "AUROC_sym": 0.5421918131510417,
+          "BDR_at_AIR_0.8": 0.7255,
+          "AIR_at_BDR_0.1": 0.11962890625
+        },
+        "4": {
+          "detector": "D4_L4",
+          "AUROC": 0.745028226241337,
+          "AUROC_sym": 0.745028226241337,
+          "BDR_at_AIR_0.8": 0.4601018675721562,
+          "AIR_at_BDR_0.1": 0.3473360655737705
+        },
+        "8": {
+          "detector": "D4_L8",
+          "AUROC": 0.8019620462601517,
+          "AUROC_sym": 0.8019620462601517,
+          "BDR_at_AIR_0.8": 0.3491048593350384,
+          "AIR_at_BDR_0.1": 0.44024122807017546
+        }
+      },
+      "mean_J": 0.6105874820123267,
+      "Khat_q": 50.656458296626106,
+      "Gamma_select": 0.17599213691569732
+    },
+    "0.5": {
+      "honest": {
+        "CSVR": 0.0,
+        "FSVR": 0.0,
+        "Channel_Risk": 0.0625,
+        "Insufficient": 0.0625,
+        "Rejected": 0.9375
+      },
+      "strongest_by_L": {
+        "1": {
+          "detector": "D1_L1",
+          "AUROC": 0.5319856770833333,
+          "AUROC_sym": 0.5319856770833333,
+          "BDR_at_AIR_0.8": 0.7878333333333334,
+          "AIR_at_BDR_0.1": 0.1083984375
+        },
+        "4": {
+          "detector": "D4_L4",
+          "AUROC": 0.7102839215014334,
+          "AUROC_sym": 0.7102839215014334,
+          "BDR_at_AIR_0.8": 0.5133701188455009,
+          "AIR_at_BDR_0.1": 0.3099385245901639
+        },
+        "8": {
+          "detector": "D3_L8",
+          "AUROC": 0.755030959752322,
+          "AUROC_sym": 0.755030959752322,
+          "BDR_at_AIR_0.8": 0.4635549872122762,
+          "AIR_at_BDR_0.1": 0.3580043859649123
+        }
+      },
+      "mean_J": 0.5381186142502613,
+      "Khat_q": 11.572960440565467,
+      "Gamma_select": 0.10352326915363191
+    },
+    "1.0": {
+      "honest": {
+        "CSVR": 0.125,
+        "FSVR": 0.0,
+        "Channel_Risk": 0.03125,
+        "Insufficient": 0.03125,
+        "Rejected": 0.84375
+      },
+      "strongest_by_L": {
+        "1": {
+          "detector": "D1_L1",
+          "AUROC": 0.519413818359375,
+          "AUROC_sym": 0.519413818359375,
+          "BDR_at_AIR_0.8": 0.8073333333333333,
+          "AIR_at_BDR_0.1": 0.10986328125
+        },
+        "4": {
+          "detector": "D4_L4",
+          "AUROC": 0.7075991560612598,
+          "AUROC_sym": 0.7075991560612598,
+          "BDR_at_AIR_0.8": 0.5248302207130731,
+          "AIR_at_BDR_0.1": 0.3084016393442623
+        },
+        "8": {
+          "detector": "D3_L8",
+          "AUROC": 0.739948947256248,
+          "AUROC_sym": 0.739948947256248,
+          "BDR_at_AIR_0.8": 0.4859335038363171,
+          "AIR_at_BDR_0.1": 0.3514254385964912
+        }
+      },
+      "mean_J": 0.48945471107883964,
+      "Khat_q": 3.032808890040426,
+      "Gamma_select": 0.05485936598221025
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "held_qwen_source": {
+    "n": 128,
+    "sha256": "33ad0d867f1201a6e0e5dcb3da9814a964936715241cbc1486c50ff94c703371",
+    "mean_response_chars": 266.4296875
+  },
+  "held_qwen_nf4": {
+    "n": 128,
+    "sha256": "1621c784659846d6deb990ab7d5622161af853b84fe45beae3f4e9068061613f",
+    "mean_response_chars": 269.5078125
+  },
+  "held_phi_source": {
+    "n": 128,
+    "sha256": "691ffcf28fd23fa646bb729da292b75e1b66215c8e22fae9bc7df4559ed06a58",
+    "mean_response_chars": 237.1875
+  }
+}

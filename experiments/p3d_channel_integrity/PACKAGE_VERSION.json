@@ -1,0 +1,8 @@
+{
+  "package": "SLATE_Server_PublishedBaselines_StageP3D_LLMDNA_ChannelIntegrity_v1",
+  "stage": "P3D",
+  "purpose": "Frozen private-consistency evaluation under A2/A3/A4 after P3C; no method rescue or retuning",
+  "depends_on": ["P3B v1.2.1 complete", "P3C v1 complete"],
+  "heldout_policy": "reuse exactly the already-touched P3C heldout pool/sessions; no new heldout selection",
+  "generation_policy": "reuse P3C response banks and embeddings; no causal-LM generation"
+}
