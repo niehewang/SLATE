@@ -1,0 +1,8 @@
+{
+  "package": "SLATE_Server_PublishedBaselines_StageP3B_LLMDNA_FullSLATE_DevCalFreeze_v1_2_1_AssetPathResume",
+  "scientific_stage": "StageP3B",
+  "runner_version": "v1.2.1",
+  "change_scope": "pre-run protocol conformance + failure-safe/resume engineering",
+  "heldout_access": false,
+  "purpose": "asset-path-only resume after v1.2 failed before freeze; use P2B-verified /data Phi checkpoint; no protocol or held-out changes"
+}

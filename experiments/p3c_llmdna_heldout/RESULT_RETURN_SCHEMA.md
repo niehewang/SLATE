@@ -1,0 +1,12 @@
+Return package includes:
+- status.json
+- freeze_audit.json
+- detector_rebuild_audit.json
+- heldout_pool.json
+- heldout_metrics.json
+- threshold_transfer.json
+- theory_bridge_heldout.json
+- paper_result_summary.json
+- summary.json
+- launcher_exit_code.txt
+- run.log

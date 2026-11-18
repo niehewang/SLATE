@@ -1,0 +1,11 @@
+{
+  "executed_package_active_code": {
+    "common.py": "753844ff8f6b28499746fe5e9b617b305c7f177f3132035ac5c19d1be44abca8",
+    "core_helpers.py": "aef5f42317f62c5b443672f2a16fdbf23ac94462c0e6e3e1cf27dedf59edb324",
+    "get_config.py": "1c0470c7c2d2be09d3dae0edd11532d1631e1b3f2f011238b01113228b915845",
+    "precheck.py": "3ef53c3fc583e3ca7e68d0090cca71ef820ebd5c1dfb9870b16ea371ce604fdd",
+    "run_g4.py": "610bb54d6ddc6afdd1404217123cc26ff8e2a15954e0218eda25fa5b2cc1ba49",
+    "selftest.py": "223d16e0daf38094a21b89c599003e41cbaed69c8dcfb70cb497929d2114f6c3"
+  },
+  "public_transform": "machine paths/internal workflow metadata sanitized; prior held-out conversation IDs SHA256-hashed; RNG namespaces/scientific settings preserved"
+}

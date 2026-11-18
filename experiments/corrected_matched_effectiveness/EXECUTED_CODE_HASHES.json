@@ -1,0 +1,11 @@
+{
+  "executed_package_active_code": {
+    "common.py": "5fd5ecfece401cd2eb9ef448d9132b28745d52d67bfb35baef04dee2663b29b1",
+    "core_helpers.py": "aef5f42317f62c5b443672f2a16fdbf23ac94462c0e6e3e1cf27dedf59edb324",
+    "get_config.py": "8f2cd70f33a17785b663c4c0912a092c78feed199d927d1428877243370e8b02",
+    "precheck.py": "135b40e428465da69d1fe862911608791b1aa26b3021bb2fb78af12bb3e5b1ea",
+    "run_g3.py": "715618689effb5ebbde68193f7704fb96fe9d780db48f8bdd4d836b67f851478",
+    "selftest.py": "e43a07724abb9d112eb61d9b1ea54f9221ff11188061d6798492dd92f8cc8b83"
+  },
+  "public_transform": "machine paths and internal workflow metadata sanitized; RNG namespaces/scientific settings preserved"
+}

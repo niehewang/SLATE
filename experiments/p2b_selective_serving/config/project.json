@@ -1,0 +1,17 @@
+{
+  "workflow": "SLATE_PUBLISHED_BASELINES_STAGEP2B_LLMPRINT_SELECTIVE_SERVING_DEGRADATION_V1",
+  "eval_start": 64,
+  "eval_count": 64,
+  "num_samples": 100,
+  "max_new_tokens": 1,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": 0,
+  "a2_L": 4,
+  "a2_episodes": 100,
+  "bootstrap_reps": 2000,
+  "betas": [0.01, 0.05, 0.10, 0.20],
+  "negative_models": ["distilbert/distilgpt2", "facebook/opt-350m", "bigscience/bloom-560m"],
+  "negative_min_required": 2,
+  "hf_mirror": "https://hf-mirror.com"
+}

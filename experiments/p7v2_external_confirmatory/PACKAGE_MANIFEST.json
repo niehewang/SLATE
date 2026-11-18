@@ -1,0 +1,61 @@
+{
+  "package": "SLATE_Server_StageP7v2_RevisedSLATE_ShareGPT_Phi_ExternalConfirmatory_v1",
+  "created": "2026-10-05",
+  "files": [
+    {
+      "path": "PACKAGE_VERSION.txt",
+      "size": 55,
+      "sha256": "9475360c81194bd64567cbd27ed5bcb6b0542500494719ade0395b5e3380e306"
+    },
+    {
+      "path": "PROTOCOL_STAGEP7.md",
+      "size": 1208,
+      "sha256": "63853442bb4aa698920284871c7e9ebd0c3eb966094687a87d4d7c54a06961a7"
+    },
+    {
+      "path": "QA_NOTES.md",
+      "size": 562,
+      "sha256": "0593744a1e2e7e454d17057182f2962da05aa65b866ab718cc27d5be0be470ea"
+    },
+    {
+      "path": "README.md",
+      "size": 1332,
+      "sha256": "8ca6f916eee0d428a6fdf947ed7a7b5e447a36e29881973be3fc229fc0cf2112"
+    },
+    {
+      "path": "RESULT_RETURN_SCHEMA.md",
+      "size": 276,
+      "sha256": "291a8fba13606e676f4aa488ed419e7e5d61b54259f06726b0dad7a1e49faf1a"
+    },
+    {
+      "path": "RUN_THIS.sh",
+      "size": 1537,
+      "sha256": "5f7a724b9f91a6050fa583ad1b6901e02dd0223103b2386ecb0d3bf548c42814"
+    },
+    {
+      "path": "SELFTEST.sh",
+      "size": 527,
+      "sha256": "a3d957dfb02133a57f3dbc3e00cf5cca0e03fdf4c2e195bdfe41cb4052db8ca4"
+    },
+    {
+      "path": "assets/SHAREGPT_ASSET_REQUIRED.txt",
+      "size": 243,
+      "sha256": "ca71a8ca51905ef5385d663bd455e8fc8552a1fc7b811e280db977e71e9eb27e"
+    },
+    {
+      "path": "config/project.json",
+      "size": 1543,
+      "sha256": "453b90842cb5dd1e356926ddbd9302eb7e6cd578b52a9cffd85d3fd738b86829"
+    },
+    {
+      "path": "scripts/p3b_core.py",
+      "size": 43545,
+      "sha256": "92a4b7a16334eb00cba1e8066f43b6f0826b45f8330f7c20e5305b88585e36a6"
+    },
+    {
+      "path": "scripts/run_stagep7.py",
+      "size": 34750,
+      "sha256": "2a72fad7b40b6058b693059710f9b1cf73c07996a21b402b192237cffe1f5d4c"
+    }
+  ]
+}

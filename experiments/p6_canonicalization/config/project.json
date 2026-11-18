@@ -1,0 +1,12 @@
+{
+  "workflow": "SLATE_STAGEP6_LLMDNA_CANONICALIZATION_DIAGNOSTIC_V1",
+  "diagnostic_only": true,
+  "main_q": 64,
+  "heldout_sessions": 32,
+  "main_beta": 0.1,
+  "L_grid": [1,4,8],
+  "seed": 20261005,
+  "new_model_generation": false,
+  "retuning_allowed": false,
+  "method_change_under_test": "server-visible scheduled order + auditor-side restoration to pre-scheduler random_order before lineage evidence extraction"
+}

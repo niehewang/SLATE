@@ -1,0 +1,14 @@
+{
+  "status": "STAGEP3C_COMPLETE",
+  "phases": {
+    "freeze_audit": "ok",
+    "detector_rebuild": "ok",
+    "heldout_pool": "ok",
+    "heldout_responses": "ok",
+    "heldout_detector_scores": "ok",
+    "heldout_lineage_attacks": "ok",
+    "paper_summary": "ok"
+  },
+  "heldout_touched": true,
+  "retuned": false
+}

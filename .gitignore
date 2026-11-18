@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Large model/data assets
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.parquet
+*.arrow
+*.jsonl.gz
+*.tar.gz
+*.tar
+*.zip
+models/
+data/
+public_data/
+checkpoints/
+
+# Experiment-generated artifacts
+runs/
+return/
+returns/
+banks/
+embeddings/
+cache/
+logs/
+outputs/
+*.log
+nohup.out

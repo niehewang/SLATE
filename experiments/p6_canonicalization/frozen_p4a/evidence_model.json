@@ -1,0 +1,10 @@
+{
+  "engine": "Semantic Response Profile (SRP)",
+  "definition": "J_E(x)=cosine-distance(Qwen-source response prototype, Phi-source response prototype), source-only; clipped using development q05/q95",
+  "dev_q05": 0.09972035167634467,
+  "dev_q95": 0.7616276166312318,
+  "dev_mean": 0.45584437785821086,
+  "cal_mean": 0.4345953450966294,
+  "uses_suspect_response": false,
+  "trim_fraction": 0.1
+}

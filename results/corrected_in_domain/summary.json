@@ -1,0 +1,40 @@
+{
+  "matched_effectiveness": {
+    "L4_delta_BDR_at_AIR_0.8": 0.3330226055,
+    "L4_delta_BDR_at_AIR_0.8_ci95": [
+      0.265172141,
+      0.3965120396
+    ],
+    "L4_delta_AUROC": -0.1840550514,
+    "L4_delta_AUROC_ci95": [
+      -0.2202812723,
+      -0.1505871614
+    ],
+    "honest_delta_CSVR": -0.21875,
+    "honest_delta_CSVR_ci95": [
+      -0.296875,
+      -0.078125
+    ]
+  },
+  "operating_region": {
+    "lambda_grid": [
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      1.0
+    ],
+    "beta_grid": [
+      0.01,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "C1_all_lambdas_pass": true,
+    "C2_all_lambdas_pass": false,
+    "C3_any_lambda_beta_pass": false,
+    "strong_useful_point_exists": false,
+    "full_vs_marginal_cover_predeclared_specificity": true,
+    "full_vs_schedule_only_predeclared_specificity": false
+  }
+}

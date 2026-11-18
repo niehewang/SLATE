@@ -1,0 +1,4 @@
+Mirror-only source:
+https://hf-mirror.com/datasets/heegyu/ShareGPT_Vicuna_unfiltered_no_imsorry/resolve/main/train.json
+Expected local name: sharegpt_train.json
+Expected SHA256: fd0a9d8659486e8c1b6ec732368e4a39132adb93fb138bc70fabef834cad2076

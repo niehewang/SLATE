@@ -1,0 +1,26 @@
+name: Repository check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Public release audit
+        run: python scripts/release_audit.py
+      - name: Repository sanity check
+        run: python scripts/repo_check.py
+      - name: Compile Python sources
+        run: python -m compileall -q experiments scripts
+      - name: Install self-test dependency
+        run: python -m pip install --disable-pip-version-check numpy
+      - name: Corrected-stage self-tests
+        run: |
+          python experiments/corrected_matched_effectiveness/scripts/selftest.py
+          python experiments/operating_region_baselines/scripts/selftest.py

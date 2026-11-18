@@ -1,0 +1,10 @@
+numpy
+scipy
+scikit-learn
+torch
+transformers
+sentence-transformers
+huggingface-hub
+peft
+bitsandbytes
+tqdm

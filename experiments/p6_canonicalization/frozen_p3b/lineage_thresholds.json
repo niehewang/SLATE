@@ -1,0 +1,15 @@
+{
+  "similarity_threshold": 0.7449182297053271,
+  "risk_threshold_kappa": 1.076453425674657,
+  "bank_gap_threshold": 0.00027833112692488005,
+  "calibration_negative_n": 64,
+  "native_honest_rates": {
+    "CSVR": 0.203125,
+    "FSVR": 0.03125,
+    "Channel_Risk": 0.015625,
+    "Insufficient": 0.015625,
+    "Rejected": 0.75
+  },
+  "native_lineage_only_CSVR": 0.203125,
+  "false_source_calibration_rate": 0.0625
+}

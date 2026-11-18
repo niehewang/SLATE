@@ -1,0 +1,57 @@
+{
+  "workflow": "SLATE_PUBLISHED_BASELINES_STAGEP3C_LLMDNA_FULLSLATE_HELDOUT_CONFIRMATORY_V1",
+  "status": "STAGEP3C_COMPLETE",
+  "heldout_touched": true,
+  "freeze_reused": "P3B v1.2.1",
+  "honest": {
+    "CSVR": 0.21875,
+    "FSVR": 0.0,
+    "Channel_Risk": 0.0,
+    "Insufficient": 0.0,
+    "Rejected": 0.78125
+  },
+  "beta10": {
+    "A1": {
+      "CSVR": 0.09375,
+      "FSVR": 0.03125,
+      "Channel_Risk": 0.0,
+      "Insufficient": 0.0,
+      "Rejected": 0.875,
+      "AIR": 0.09228515625,
+      "BDR": 0.096
+    },
+    "A2": {
+      "CSVR": 0.0,
+      "FSVR": 0.125,
+      "Channel_Risk": 0.84375,
+      "Insufficient": 0.84375,
+      "Rejected": 0.03125,
+      "AIR": 0.33740234375,
+      "BDR": 0.11120821498798339
+    }
+  },
+  "strongest_by_L": {
+    "1": {
+      "detector": "D4_L1",
+      "AUROC": 0.5349420654296875,
+      "AUROC_sym": 0.5349420654296875,
+      "BDR_at_AIR_0.8": 0.755,
+      "AIR_at_BDR_0.1": 0.10009765625
+    },
+    "4": {
+      "detector": "D3_L4",
+      "AUROC": 0.6511230197674044,
+      "AUROC_sym": 0.6511230197674044,
+      "BDR_at_AIR_0.8": 0.6768625737382565,
+      "AIR_at_BDR_0.1": 0.33811475409836067
+    },
+    "8": {
+      "detector": "D3_L8",
+      "AUROC": 0.7405215054808366,
+      "AUROC_sym": 0.7405215054808366,
+      "BDR_at_AIR_0.8": 0.44903988183161003,
+      "AIR_at_BDR_0.1": 0.34868421052631576
+    }
+  },
+  "next": "Assess P3C gates without retuning. Then P3D channel integrity and P4 SRP."
+}

@@ -1,0 +1,50 @@
+{
+  "project_id": "SLATE",
+  "gate": "OPERATING_REGION_BASELINES",
+  "execution_class": "UNATTENDED_BATCH",
+  "package_version": "v1_20261112",
+  "root": "/path/to/slate_shared",
+  "run_family_root": "/path/to/slate_shared/runs/operating_region_baselines",
+  "python": "/path/to/python",
+  "llmdna_root": "/path/to/LLM-DNA-v1.0.1",
+  "qwen_source": "/path/to/Qwen3-4B-Base",
+  "phi_source": "/path/to/Phi-3-mini-4k-instruct",
+  "qwen_embedding": "/path/to/Qwen3-Embedding-8B",
+  "mpnet": "/path/to/all-mpnet-base-v2",
+  "traffic": "/path/to/traffic_frozen.jsonl",
+  "p3b_run": "/path/to/prior_devcal_run",
+  "q": 64,
+  "candidate_min": 512,
+  "candidate_target": 1024,
+  "session_realizations": 64,
+  "bootstrap_reps": 2000,
+  "lambda_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    1.0
+  ],
+  "beta_grid": [
+    0.01,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "L_grid": [
+    1,
+    4,
+    8
+  ],
+  "primary_L": 4,
+  "max_new_tokens": 64,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "first_coordinates": 64,
+  "seed": 20261112,
+  "min_free_disk_gb": 20,
+  "min_negative_queries": 128,
+  "resume_allowed_preheldout": "CONDITIONAL_MECHANICAL_ONLY",
+  "resume_allowed_postheldout": "NO",
+  "prior_heldout_exclusion": "/path/to/prior_heldout_exclusion_hashes.json"
+}

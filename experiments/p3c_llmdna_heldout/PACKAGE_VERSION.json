@@ -1,0 +1,8 @@
+{
+  "stage": "P3C",
+  "version": "v1",
+  "name": "LLMDNA Full-SLATE Held-out Confirmatory",
+  "mode": "one-shot confirmatory",
+  "source_freeze": "P3B v1.2.1",
+  "retuning_allowed": false
+}

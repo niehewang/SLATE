@@ -1,0 +1,11 @@
+# Return files
+- status.json
+- provenance_guard.json
+- p3_rebuild/freeze_audit.json
+- p3_rebuild/detector_rebuild_audit.json
+- heldout_reuse_audit.json
+- session_identity_audit.json
+- canonicalization_diagnostic.json
+- paper_result_summary.json
+- run.log
+- launcher_exit_code.txt

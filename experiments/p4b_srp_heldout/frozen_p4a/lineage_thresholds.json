@@ -1,0 +1,17 @@
+{
+  "tau_qwen_from_phi_negatives": 0.65393785599354,
+  "tau_phi_from_qwen_negatives": 0.65393785599354,
+  "risk_threshold_kappa": 1.0265482856882986,
+  "bank_gap_threshold": 0.002545795776897397,
+  "source_far_target": 0.05,
+  "qwen_false_accept_cal": 0.0625,
+  "phi_false_accept_cal": 0.0625,
+  "uniform_honest_rates": {
+    "CSVR": 0.640625,
+    "FSVR": 0.015625,
+    "Channel_Risk": 0.015625,
+    "Insufficient": 0.015625,
+    "Rejected": 0.328125
+  },
+  "protocol": "source thresholds use cross-source negatives; risk/gap use calibration honest only; all frozen before heldout"
+}

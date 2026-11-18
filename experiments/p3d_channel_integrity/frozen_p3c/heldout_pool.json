@@ -1,0 +1,9 @@
+{
+  "heldout_n": 128,
+  "q": 64,
+  "heldout_sha256": "3e68f99bc48b087e487427940e513f8228cdc762211b1af858cd7953060b6fe4",
+  "overlap_dev_text": 0,
+  "overlap_cal_text": 0,
+  "split": "heldout only",
+  "selection_salt": "P3C_HELDOUT_POOL"
+}

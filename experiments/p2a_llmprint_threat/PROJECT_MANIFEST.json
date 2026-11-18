@@ -1,0 +1,17 @@
+{
+  "project": "SLATE",
+  "stage": "PublishedBaselines_StageP2A_v1.2",
+  "purpose": "Analysis-only resume after 128/128 frozen LLMPrint GCG suffixes completed",
+  "scientific_changes": "none",
+  "forbidden_actions": [
+    "regenerate_pairs",
+    "rerun_gcg",
+    "touch_heldout",
+    "retune_detector_architecture"
+  ],
+  "package": "SLATE_Server_PublishedBaselines_StageP2A_LLMPrintThreatSurface_v1_3_SuffixDecodeHotfix",
+  "version": "1.3",
+  "scientific_settings_changed": false,
+  "change": "flatten frozen official LLMPrint suffix-id tensor before tokenizer.decode",
+  "no_gcg_rerun": true
+}
