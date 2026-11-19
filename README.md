@@ -10,7 +10,7 @@
 
 Research code for studying **remote model-lineage verification when a serving endpoint can recognize audit traffic and conditionally alter the serving path**. SLATE treats this as a serving-path auditability problem rather than assuming every query is answered by one fixed backend.
 
-> **Status:** experiments are closed. This repository preserves corrected matched evaluations, simple-baseline controls, negative/boundary evidence, and external-transfer results without post-hoc held-out retuning.
+This repository preserves the paper-facing matched evaluations, simple-baseline controls, negative/boundary evidence, and external-transfer results without post-hoc held-out retuning.
 
 ## Core question
 
@@ -38,22 +38,7 @@ The final evidence does **not** support a universal lineage-protection claim. In
 
 ## Repository layout
 
-```text
-experiments/
-  p2a_llmprint_threat/ ... p7v2_external_confirmatory/   historical/frozen chain
-  corrected_matched_effectiveness/                        corrected source-only matched evaluation
-  operating_region_baselines/                             lambda/beta sweep + simple/random controls
-results/
-  corrected_in_domain/                                    compact aggregate evidence
-docs/
-  CORRECTED_IN_DOMAIN_EVALUATION.md
-  FINAL_EXPERIMENT_CLOSEOUT.md
-scripts/
-  repo_check.py
-  release_audit.py
-```
-
-Earlier P3B/P3C files are retained as historical provenance, but their descendant-informed in-domain query selector is **superseded** by `corrected_matched_effectiveness/` and `operating_region_baselines/`.
+The public repository separates executable experiments, compact paper-facing results, supporting documentation, and validation scripts. The corrected matched evaluation is under `experiments/corrected_matched_effectiveness/`, and operating-region controls are under `experiments/operating_region_baselines/`. Earlier historical evaluation artifacts are retained only for scientific provenance; the corrected source-only matched evaluation is the authoritative in-domain analysis.
 
 ## Quick validation
 
@@ -71,7 +56,7 @@ The repository does not redistribute model weights, raw WildChat/ShareGPT/OASST 
 
 For privacy minimization, the corrected operating-region stage requires a local SHA256-only prior-heldout exclusion manifest generated from an authorized local manifest; raw conversation identifiers are not redistributed.
 
-The `G3_*` / `G4_*` strings retained inside corrected-stage code are immutable RNG namespace labels from the executed experiments; changing them changes deterministic sampling.
+Legacy deterministic RNG namespace labels retained inside the executed experiment code are immutable reproduction identifiers; changing them changes deterministic sampling.
 
 ## Data, models, and third-party methods
 
